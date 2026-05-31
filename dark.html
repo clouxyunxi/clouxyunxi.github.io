@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="cloux.ico">
+    <title>cloux-主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Georgia", "Times New Roman", "宋体", serif;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-blur {
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background-image: url('https://t.alcy.cc/moe');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+        .bg-blur::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .corner-table {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-blur"></div>
+    <table border="1" class="corner-table">
+        <tr>
+            <td>欢迎来到cloux主页<br>owo</td>
+        </tr>
+        <tr>
+            <td>站主状态：活着</td>
+        </tr>
+        <tr>
+            <td>北京时间：<br><span id="current-time"></span></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><p style="color: rgb(0, 0, 0);">浅色模式</p></a></td>
+        </tr>
+    </table>
+    <table border="0" style="background-color: rgb(60, 60, 60);">
+        <tr>
+            <td><img src="cloux.webp" alt="cloux头像" width="280"></td>
+            <td><h1><p style="color: rgb(110, 210, 250);"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm cloux;qwq.&nbsp;&nbsp;&nbsp;</i><br><br></p></h1></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h3><p style="color: rgb(0, 0, 0);">简介：</h3>
+    <h2><p style="color: rgb(0, 0, 0);">这里没有什么</p></h2>
+    <p><p style="color: rgb(0, 0, 0);">你可以点击<a href="https://www.bilibili.com">这里</a>前往bilibili</p>
+    <h4><p style="color: rgb(0, 0, 0);">owo</p></h4>
+    <br>
+    <hr>
+    <table border="0" style="background-color: rgb(60, 60, 60);">
+    <tr>
+        <td>
+                <p><p style="color: rgb(255, 255, 255);">邮箱：cloud.xi@outlook.com<Aqua/p>
+                <p><p style="color: rgb(255, 255, 255);">QQ：3819475378<Aqua/p>
+                <p><a href="https://github.com/clouxyunxi"><img src="github.svg" alt="github" /></a>&nbsp;&nbsp;<a href="https://user.qzone.qq.com/3819475378"><img src="qq.png" alt="qq空间" /></a>&nbsp;&nbsp;<a href="https://steamcommunity.com/profiles/76561199827824418/"><img src="steam.png" alt="steam" /></a></p>
+                <p><iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0"></iframe></p>
+        </td>
+        <td>
+            <p><img src="qq_dark.webp" alt="qq二维码" width="200" height="350"></img></p>
+        </td>
+    </tr>
+    </table>
+    <hr>
+    <p style="color: Red;">Σ(°Д°;)</p>
+    <a href="https://www.bilibili.com/video/BV1UT42167xb"><p style="color: Red;">[千万别点]</p></a>
+    <br>
+    <table border="0" style="background-color: rgb(60, 60, 60);">
+        <tr>
+            <td>
+                <a href="https://icp.gov.moe/?keyword=20260944" target="_blank"><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;萌ICP备20260944号&nbsp;&nbsp;</p></a>
+            </td>
+        </tr>
+    </table>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = 'https://mobile.owo1.org';
+        }
+        function updateTime() {
+            document.getElementById('current-time').textContent = new Date().toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
