@@ -37,71 +37,174 @@
             top: 20px;
             right: 20px;
         }
+        .button {
+        background-color: rgb(60, 60, 60);/*按钮背景颜色*/
+        color: rgb(110, 210, 250);/*按钮文字颜色*/
+        padding: 10px 20px;/*按钮边距*/
+        border: 2px solid rgb(110, 210, 250);/*按钮边框*/
+        }
+        .button:hover {
+        background-color: rgb(110, 210, 250);
+        color: rgb(60, 60, 60);
+        padding: 10px 20px;
+        border: 2px solid rgb(110, 210, 250);
+        }
+        .table-texture {
+        width: 31%;
+        border-collapse: collapse;
+        background-color: rgb(60, 60, 60);
+        }
+
+        /*.table-texture th,
+        .table-texture td {
+        border: 2px solid #3498db;
+        text-align: left;
+        }*/
+        
+        @media (max-width: 768px) {
+            .table-texture {
+                width: 90%;
+            }
+            .button-table {
+                width: 90%;
+            }
+            .button-table td {
+                display: block;
+                padding: 10px 0;
+            }
+            .button {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+            .table-texture img {
+                max-width: 100%;
+                height: auto;
+            }
+            h1, h2, h3, h4 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.6;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <h4>[广告位招租]</h4>
+    <hr>
     <div class="bg-blur"></div>
-    <table border="1" class="corner-table">
-        <tr>
-            <td>欢迎来到cloux主页<br>owo</td>
-        </tr>
-        <tr>
-            <td>站主状态：活着</td>
-        </tr>
-        <tr>
-            <td>北京时间：<br><span id="current-time"></span></td>
-        </tr>
-        <tr>
-            <td><a href="index.html"><p style="color: rgb(0, 0, 0);">浅色模式</p></a></td>
-        </tr>
-    </table>
-    <table border="0" style="background-color: rgb(60, 60, 60);">
-        <tr>
-            <td><img src="cloux.webp" alt="cloux头像" width="280"></td>
-            <td><h1><p style="color: rgb(110, 210, 250);"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm cloux;qwq.&nbsp;&nbsp;&nbsp;</i><br><br></p></h1></td>
-        </tr>
-    </table>
     <br>
     <br>
-    <h3><p style="color: rgb(0, 0, 0);">简介：</h3>
-    <h2><p style="color: rgb(0, 0, 0);">这里没有什么</p></h2>
-    <p><p style="color: rgb(0, 0, 0);">你可以点击<a href="https://www.bilibili.com">这里</a>前往bilibili</p>
-    <h4><p style="color: rgb(0, 0, 0);">owo</p></h4>
     <br>
-    <hr>
-    <table border="0" style="background-color: rgb(60, 60, 60);">
-    <tr>
-        <td>
-                <p><p style="color: rgb(255, 255, 255);">邮箱：cloud.xi@outlook.com<Aqua/p>
-                <p><p style="color: rgb(255, 255, 255);">QQ：3819475378<Aqua/p>
-                <p><a href="https://github.com/clouxyunxi"><img src="github.svg" alt="github" /></a>&nbsp;&nbsp;<a href="https://user.qzone.qq.com/3819475378"><img src="qq.png" alt="qq空间" /></a>&nbsp;&nbsp;<a href="https://steamcommunity.com/profiles/76561199827824418/"><img src="steam.png" alt="steam" /></a></p>
-                <p><iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0"></iframe></p>
-        </td>
-        <td>
-            <p><img src="qq_dark.webp" alt="qq二维码" width="200" height="350"></img></p>
-        </td>
-    </tr>
-    </table>
-    <hr>
-    <p style="color: Red;">Σ(°Д°;)</p>
-    <a href="https://www.bilibili.com/video/BV1UT42167xb"><p style="color: Red;">[千万别点]</p></a>
     <br>
-    <table border="0" style="background-color: rgb(60, 60, 60);">
-        <tr>
-            <td>
-                <a href="https://icp.gov.moe/?keyword=20260944" target="_blank"><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;萌ICP备20260944号&nbsp;&nbsp;</p></a>
-            </td>
-        </tr>
-    </table>
+    <br>
+    <center>
+        <table border="0" width="31%" class="button-table">
+            <tr>
+                <td>
+                    <button class="button" onclick="window.open('https://jjtt.org','_blank')">个人博客</button>
+                </td>
+                <td>
+                    <button class="button" onclick="window.open('picture.html','_blank')">图库</button>
+                </td>
+                <td>
+                    <button class="button" onclick="window.location.href='index.html'">浅色模式</button>
+                </td>
+            </tr>
+        </table>
+        <table border="0" class="table-texture">
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="cloux.webp" alt="cloux头像" width="260"></td>
+            </tr>
+            <tr>
+                <td><h1><p style="color: rgb(110, 210, 250);"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm cloux;qwq.</i><br><br></p></h1></td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table border="0" class="table-texture">
+            <tr>
+                <td>
+                    <h3><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;简介：</h3>
+                    <h2><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;hyw</p></h2>
+                    <p><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;一个开发者</p>
+                    <p><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;会一点scratch,python,c++ and html</p>
+                    <h4><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;owo</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;qq:3819475378</p>
+                    <p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;email:wo.bu.dao.a@outlook.com</p>
+                    <p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;<a href="https://github.com/clouxyunxi">github</a></p>
+                    <!--<p><iframe src="https://zhanyuzhang.github.io/lovely-cat/cat.html" frameborder="0"></iframe></p>-->
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p style="color: Red;">Σ(°Д°;)</p>
+        <a href="https://www.bilibili.com/video/BV1UT42167xb"><p style="color: Red;">[千万别点]</p></a>
+        <p style="color: rgb(255, 255, 255);">此网站已存活<span id="current-time"></span></p>
+        <br>
+        <a href="https://icp.gov.moe/?keyword=20260944" target="_blank"><p style="color: rgb(255, 255, 255);">&nbsp;&nbsp;萌ICP备20260944号&nbsp;&nbsp;</p></a>
+        <p style="color: rgb(255, 255, 255);">© 2026 cloux.</p>
+    </center>
+
     <script>
+        /*
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             window.location.href = 'https://mobile.owo1.org';
         }
+        */
+
         function updateTime() {
-            document.getElementById('current-time').textContent = new Date().toLocaleString();
+            var startTime = new Date(2026, 1, 13, 6, 8, 16);
+            var now = new Date();
+            var diff = now.getTime() - startTime.getTime();
+            
+            if (diff < 0) {
+                document.getElementById('current-time').innerHTML = '计算错误';
+                return;
+            }
+            
+            var seconds = Math.floor(diff / 1000);
+            var minutes = Math.floor(seconds / 60);
+            var hours = Math.floor(minutes / 60);
+            var days = Math.floor(hours / 24);
+            var months = Math.floor(days / 30);
+            var years = Math.floor(months / 12);
+            
+            months = months % 12;
+            days = days % 30;
+            hours = hours % 24;
+            minutes = minutes % 60;
+            seconds = seconds % 60;
+            
+            document.getElementById('current-time').innerHTML = years + '年' + months + '月' + days + '日' + hours + '时' + minutes + '分' + seconds + '秒';
         }
-        updateTime();
-        setInterval(updateTime, 1000);
+        
+        function showModal() {
+            event.preventDefault();
+            document.getElementById('modal').style.display = 'block';
+        }
+        
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTime();
+            setInterval(updateTime, 1000);
+        });
     </script>
 </body>
